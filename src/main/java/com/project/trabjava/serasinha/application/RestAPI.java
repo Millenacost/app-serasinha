@@ -1,4 +1,4 @@
-package com.project.trabjava.serasinha;
+package com.project.trabjava.serasinha.application;
 
 import javax.ws.rs.ApplicationPath;
 
