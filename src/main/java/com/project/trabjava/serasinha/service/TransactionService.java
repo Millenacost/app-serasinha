@@ -30,7 +30,7 @@ public class TransactionService {
 	    		t.getValue(), 
 	    		data
         );
-        EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "serasinhadb" );
+        EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "heroku_ab409c421a22263" );
         EntityManager entityManager = emfactory.createEntityManager();
         entityManager.getTransaction().begin();
         entityManager.persist(transaction);

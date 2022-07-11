@@ -112,7 +112,7 @@ public class User implements Serializable {
     
     public void createUser(String name, String email, String phone, Long password, Long account_id, Float score) {
         User user = new User(name, phone,email, password, account_id, score);
-        EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("serasinhadb");
+        EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("heroku_ab409c421a22263");
         EntityManager entityManager = emfactory.createEntityManager();
         entityManager.getTransaction().begin();
         entityManager.persist(user);

@@ -101,7 +101,7 @@ public class Account implements Serializable {
         //por ultimo, persisto a account
         Account account = new Account(user.getId(), wallet.getId());
 
-        EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "serasinhadb" );
+        EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "heroku_ab409c421a22263" );
         EntityManager entityManager = emfactory.createEntityManager();
         entityManager.getTransaction().begin();
         entityManager.persist(account);

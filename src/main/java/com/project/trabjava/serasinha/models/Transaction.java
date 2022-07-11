@@ -69,7 +69,7 @@ public class Transaction implements Serializable{
 //    ) {
 ////		System.out.println(t.getDate());
 //        Transaction transaction = new Transaction(t.buyer_account_id, t.seller_account_id, t.value, t.date);
-//        EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "serasinhadb" );
+//        EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "heroku_ab409c421a22263" );
 //        EntityManager entityManager = emfactory.createEntityManager();
 //        entityManager.getTransaction().begin();
 //        entityManager.persist(transaction);

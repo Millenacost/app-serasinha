@@ -45,7 +45,7 @@ public class Serasinha_Loan implements Serializable{
 	}
 
     private User getUser(Long user_id) {
-    	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "serasinhadb" );
+    	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "heroku_ab409c421a22263" );
 
     	EntityManager entitymanager = emfactory.createEntityManager();
     	Query query = entitymanager.createQuery("FIND User by id");

@@ -27,7 +27,7 @@ public class Wallet {
 	
 	public void createWallet(Long account_id) {
 		Wallet wallet = new Wallet(account_id, 0F);
-    	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "serasinhadb" );
+    	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "heroku_ab409c421a22263" );
     	EntityManager entityManager = emfactory.createEntityManager();
     	entityManager.getTransaction().begin();
 	   	entityManager.persist(wallet);
@@ -75,7 +75,7 @@ public class Wallet {
 //	public void createWallet(Long account_id) {
 //		Wallet wallet = new Wallet(account_id, 0F);
 //    	
-//    	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "serasinhadb" );
+//    	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "heroku_ab409c421a22263" );
 //    	EntityManager entityManager = emfactory.createEntityManager();
 //    	entityManager.getTransaction().begin();
 //	   	entityManager.persist(wallet);

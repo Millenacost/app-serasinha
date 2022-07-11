@@ -58,7 +58,7 @@ public class Bank_Card implements Serializable{
 	) {
     	Bank_Card bankCard = new Bank_Card(null, card_number, security_code, date_validity, agency, account_number);
     	
-    	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "serasinhadb" );
+    	EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "heroku_ab409c421a22263" );
     	EntityManager entityManager = emfactory.createEntityManager();
     	entityManager.getTransaction().begin();
 	   	entityManager.persist(bankCard);
