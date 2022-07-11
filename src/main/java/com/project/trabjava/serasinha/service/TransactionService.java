@@ -14,11 +14,10 @@ import com.project.trabjava.serasinha.models.Transaction;
 
 @Path("transaction")
 @Consumes(MediaType.APPLICATION_JSON)
-@Produces(MediaType.APPLICATION_JSON)
 public class TransactionService {
 	
 	@POST
-	public Transaction createTransaction(
+	public void createTransaction(
            Transaction t
     ) {
 		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
@@ -36,6 +35,5 @@ public class TransactionService {
         entityManager.persist(transaction);
         entityManager.getTransaction().commit();
 
-		return transaction;
 	}
 }
