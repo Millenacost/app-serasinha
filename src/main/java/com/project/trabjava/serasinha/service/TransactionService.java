@@ -17,7 +17,6 @@ import com.project.trabjava.serasinha.models.Transaction;
 public class TransactionService {
 	
 	@POST
-	@Path("/")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public String createTransaction(
            Transaction t
